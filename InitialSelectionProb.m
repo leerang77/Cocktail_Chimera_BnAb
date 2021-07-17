@@ -6,24 +6,6 @@ end
 dlmwrite('InitialBnAbSelectionProb.csv', [X;InitialProb]);
 
 function p = getInitialSelectionProb(AgTypeIdx,rho,SharedTcellFraction,X,W,bnab)
-    %% Run a single GC simulation
-    % Input
-    %X - Float, Stringency of T cell selection
-
-    % Output
-    %GCStat - Struct with following fields:
-    %   BenMuts: All affinity-increasing mutations that occur in GC
-    %   BnAbMutations: BnAb mutations that become prevalent in the population
-    %   BenMutsByTime: Number of affinity-increasing mutations by time
-    %   SpecificMutations: Specific mutations that become prevalent in the population
-    %   BcellsByEp: Number of B cells targeting each epitope by time
-    %   SurvivingLineages: Number of surviving lineages by time
-    %   DomOccupancy: Occupancy of the most dominant lineage by time 
-    %   SpecificAff: Mean affinity and number of positively selected strain-specific B cells 
-    %   BnAbAff: Mean affinity and number of positively selected strain-specific B cells
-    %   BnAbAffAll: Array of affinities of bnAb precursors
-    %   SpecificNumMut: Average number of mutations (total, affinity affecting) on SS B cells
-    %   BnAbNumMut: Average number of mutations (total, affinity affecting) on BnAb precursors
 
     %--------------------------------
     Constants = UseSharedConstants.Constants; %get handle for the shared constants

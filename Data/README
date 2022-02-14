@@ -1,0 +1,18 @@
+AFFINITY MATURATION SIMULATION DATA
+(1) chimeric/cocktailEXplicit_rho_00_E0_00_X_00_f_00.mat:
+	rho - antigenic distance; E0 - initial affinity; X - Stringency of T cell help; f - fraction of T cell epitopes shared
+	MATLAB data files containing the results of the simulation.
+
+
+ANALYSIS DATA
+(1) chimeric/cocktail_bnAb_fraction_rho00.csv:
+	Each row contains the fraction of GC B cells that are RBS-directed.
+	Row 1, 2, 3, 4 corresponds to X=0.4, 0.6, 1.0, 1.5 respectively
+(2) chimeric/cocktail_bnAb_crossreactive_rho00.csv:
+	Each row contains the fraction of RBS-directed B cells that are cross-reactive.
+	Row 1, 2, 3, 4 corresponds to X=0.4, 0.6, 1.0, 1.5 respectively
+
+ANTIGEN EXTRACTION DATA
+(1) Antigen0_E1-00_E2-00_E3-00_R0120_L0120
+	Antigen2 - Chimera, Antigen3 - Cocktail; E1,E2,E3 - Affinity of B cell; 
+	R0,L0(fixed) - B cell receptor and antigen number in immune synnapse
